@@ -1,6 +1,6 @@
 class Queue {
-  constructor(arr) {
-    this.items = arr || []
+  constructor(arr = []) {
+    this.items = arr
   }
 
   enqueue(items) {

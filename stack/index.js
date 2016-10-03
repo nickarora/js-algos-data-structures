@@ -1,6 +1,6 @@
 class Stack {
-  constructor(arr) {
-    this.items = arr || []
+  constructor(arr = []) {
+    this.items = arr
   }
 
   push(item) {
