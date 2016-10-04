@@ -72,14 +72,10 @@ class HashTable {
 
   /* eslint-disable no-bitwise */
   hash(str) {
-    let hash = 0
-
-    str.split('').forEach((letter) => {
-      hash = (hash << 5) + letter.charCodeAt(0)
-      hash = (hash & hash) % this.limit
-    })
-
-    return hash
+    return str.split('').reduce((hash, letter) => {
+      const h = (hash << 5) + letter.charCodeAt(0)
+      return (h & h) % this.limit
+    }, 0)
   }
   /* eslint-enable no-bitwise */
 
