@@ -1,4 +1,7 @@
-/* simulates the ES6 Set built in class */
+/* simulates the ES6 Set built in class
+   at some point, I'll updat this to accept more than strings
+*/
+
 class Set {
   constructor() {
     this.items = {}
