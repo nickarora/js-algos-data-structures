@@ -1,3 +1,4 @@
+/* simulates the ES6 Set built in class */
 class Set {
   constructor() {
     this.items = {}
