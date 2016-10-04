@@ -1,4 +1,4 @@
-class HashSet {
+class HashTable {
   constructor() {
     this.storage = []
     this.count = 0
@@ -98,4 +98,4 @@ class HashSet {
   }
 }
 
-export default HashSet
+export default HashTable
